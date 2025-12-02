@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roberto Rojo - CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.6; }
+    .cv-container { max-width: 900px; margin: 40px auto; background: #fff; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border-radius: 16px; overflow: hidden; }
+    .header { background: linear-gradient(135deg, #6366f1 0%, #0ea5e9 100%); color: #fff; padding: 50px; }
+    .header h1 { font-size: 2.8rem; font-weight: 700; margin-bottom: 8px; }
+    .header h2 { font-size: 1.3rem; font-weight: 400; opacity: 0.9; margin-bottom: 20px; }
+    .contact-info { display: flex; gap: 25px; flex-wrap: wrap; font-size: 0.95rem; }
+    .contact-info a { color: #fff; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .contact-info a:hover { text-decoration: underline; }
+    .main { padding: 50px; }
+    .section { margin-bottom: 40px; }
+    .section-title { font-size: 1.4rem; font-weight: 700; color: #6366f1; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #e2e8f0; display: flex; align-items: center; gap: 10px; }
+    .section-title i { font-size: 1.2rem; }
+    .item { margin-bottom: 25px; }
+    .item-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; flex-wrap: wrap; gap: 10px; }
+    .item-title { font-size: 1.1rem; font-weight: 600; color: #0f172a; }
+    .item-subtitle { color: #6366f1; font-weight: 500; }
+    .item-date { color: #64748b; font-size: 0.9rem; background: #f1f5f9; padding: 4px 12px; border-radius: 20px; }
+    .item-description { color: #475569; }
+    .item-description ul { margin-left: 20px; margin-top: 8px; }
+    .item-description li { margin-bottom: 5px; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .skill-group h4 { font-weight: 600; margin-bottom: 10px; color: #0f172a; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill-tags span { background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(14,165,233,0.1)); color: #6366f1; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 500; }
+    .languages { display: flex; gap: 30px; flex-wrap: wrap; }
+    .language { text-align: center; }
+    .language-name { font-weight: 600; display: block; margin-bottom: 5px; }
+    .language-level { color: #64748b; font-size: 0.9rem; }
+    @media print { body { background: #fff; } .cv-container { box-shadow: none; margin: 0; } }
+    @media (max-width: 600px) { .header { padding: 30px; } .header h1 { font-size: 2rem; } .main { padding: 30px; } .contact-info { flex-direction: column; gap: 10px; } }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <div class="header">
+      <h1>Roberto Rojo</h1>
+      <h2>Biomedical Engineer | Computer Vision | Machine Learning | iOS Developer</h2>
+      <div class="contact-info">
+        <a href="https://linkedin.com/in/robertteleng"><i class="fab fa-linkedin"></i> linkedin.com/in/robertteleng</a>
+        <a href="https://github.com/robertteleng"><i class="fab fa-github"></i> github.com/robertteleng</a>
+        <span><i class="fas fa-map-marker-alt"></i> Spain</span>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="section">
+        <h3 class="section-title"><i class="fas fa-user"></i> Professional Summary</h3>
+        <p class="item-description">Multidisciplinary engineer at the intersection of AI and healthcare. Specialized in Computer Vision, Machine Learning, and Edge Computing with a strong foundation in iOS development. Experienced in building intelligent systems that combine sensor data, visual processing, and on-device AI. Background in Telecommunications and Biomedical Engineering provides unique perspective for solving complex problems in health-tech and beyond.</p>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h3>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">AI & iOS Developer - Aria Project</div>
+              <div class="item-subtitle">Independent / Research</div>
+            </div>
+            <span class="item-date">2024 - Present</span>
+          </div>
+          <div class="item-description">
+            <ul>
+              <li>Developing computer vision pipelines for real-time visual analysis</li>
+              <li>Implementing ML models optimized for edge deployment on iOS devices</li>
+              <li>Integrating multiple sensor streams with sensor fusion techniques</li>
+              <li>Building iOS applications with Core ML, Vision, and ARKit frameworks</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">iOS Developer & Instructor</div>
+              <div class="item-subtitle">KeepCoding</div>
+            </div>
+            <span class="item-date">2023 - Present</span>
+          </div>
+          <div class="item-description">
+            <ul>
+              <li>Teaching iOS programming: UIKit, SwiftUI, Secure Development, VIPER architecture</li>
+              <li>Developing course materials on Core ML and on-device machine learning</li>
+              <li>Mentoring students on real-world project development</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Mobile Developer</div>
+              <div class="item-subtitle">Equilibrha</div>
+            </div>
+            <span class="item-date">2022 - 2023</span>
+          </div>
+          <div class="item-description">
+            <ul>
+              <li>Built employee management apps with SwiftUI (iOS) and Jetpack Compose (Android)</li>
+              <li>Maintained legacy codebases in Objective-C and Java</li>
+              <li>Integrated META4 APIs for HR software solutions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Biomedical Engineering Focus</div>
+              <div class="item-subtitle">Ongoing Studies & Research</div>
+            </div>
+            <span class="item-date">2023 - Present</span>
+          </div>
+          <div class="item-description">Specializing in biosensors, medical signal processing, and health-tech applications.</div>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Mobile Application Development Bootcamp</div>
+              <div class="item-subtitle">KeepCoding</div>
+            </div>
+            <span class="item-date">2022</span>
+          </div>
+          <div class="item-description">Intensive program: iOS, Android, Swift, Kotlin, mobile architectures.</div>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Computer Engineering</div>
+              <div class="item-subtitle">University</div>
+            </div>
+            <span class="item-date">2019 - 2022</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Telecommunications Engineering</div>
+              <div class="item-subtitle">University</div>
+            </div>
+            <span class="item-date">2016 - 2019</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title"><i class="fas fa-code"></i> Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4>Computer Vision</h4>
+            <div class="skill-tags">
+              <span>OpenCV</span>
+              <span>Vision Framework</span>
+              <span>ARKit</span>
+              <span>Object Detection</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Machine Learning</h4>
+            <div class="skill-tags">
+              <span>Core ML</span>
+              <span>PyTorch</span>
+              <span>TensorFlow</span>
+              <span>Create ML</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Edge Computing</h4>
+            <div class="skill-tags">
+              <span>On-device AI</span>
+              <span>Neural Engine</span>
+              <span>Model Optimization</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Biomedical</h4>
+            <div class="skill-tags">
+              <span>Biosensors</span>
+              <span>Signal Processing</span>
+              <span>HealthKit</span>
+              <span>Wearables</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>iOS Development</h4>
+            <div class="skill-tags">
+              <span>Swift</span>
+              <span>SwiftUI</span>
+              <span>UIKit</span>
+              <span>Combine</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Languages & Tools</h4>
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>C++</span>
+              <span>Git</span>
+              <span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title"><i class="fas fa-language"></i> Languages</h3>
+        <div class="languages">
+          <div class="language">
+            <span class="language-name">Spanish</span>
+            <span class="language-level">Native</span>
+          </div>
+          <div class="language">
+            <span class="language-name">English</span>
+            <span class="language-level">Professional</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title"><i class="fas fa-project-diagram"></i> Key Projects</h3>
+        <div class="item">
+          <div class="item-description">
+            <ul>
+              <li><strong>Aria:</strong> Computer vision and sensor fusion application with on-device ML for real-time analysis</li>
+              <li><strong>Health Monitoring Systems:</strong> Wearable data integration and biomedical signal processing</li>
+              <li><strong>Edge AI Prototypes:</strong> Optimized neural networks for mobile deployment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

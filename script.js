@@ -1,45 +1,44 @@
-// Sticky Navigation Menu JS Code
-let nav = document.querySelector("nav");
-let scrollBtn = document.querySelector(".scroll-button a");
-console.log(scrollBtn);
-let val;
+// Sticky Navigation
+const nav = document.querySelector("nav");
+const scrollBtn = document.querySelector(".scroll-button a");
+
 window.onscroll = function() {
-  if(document.documentElement.scrollTop > 20){
+  if (document.documentElement.scrollTop > 20) {
     nav.classList.add("sticky");
-    scrollBtn.style.display = "block";
-  }else{
+    scrollBtn.style.display = "flex";
+  } else {
     nav.classList.remove("sticky");
     scrollBtn.style.display = "none";
   }
+};
 
-}
+// Mobile Menu
+const navBar = document.querySelector(".navbar");
+const menuBtn = document.querySelector(".menu-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
+const navLinks = document.querySelectorAll(".menu li a");
 
-// Side NavIgation Menu JS Code
-let body = document.querySelector("body");
-let navBar = document.querySelector(".navbar");
-let menuBtn = document.querySelector(".menu-btn");
-let cancelBtn = document.querySelector(".cancel-btn");
-menuBtn.onclick = function(){
+menuBtn.onclick = function() {
   navBar.classList.add("active");
-  menuBtn.style.opacity = "0";
-  menuBtn.style.pointerEvents = "none";
-  body.style.overflow = "hidden";
-  scrollBtn.style.pointerEvents = "none";
-}
-cancelBtn.onclick = function(){
-  navBar.classList.remove("active");
-  menuBtn.style.opacity = "1";
-  menuBtn.style.pointerEvents = "auto";
-  body.style.overflow = "auto";
-  scrollBtn.style.pointerEvents = "auto";
-}
+};
 
-// Side Navigation Bar Close While We Click On Navigation Links
-let navLinks = document.querySelectorAll(".menu li a");
-for (var i = 0; i < navLinks.length; i++) {
-  navLinks[i].addEventListener("click" , function() {
+cancelBtn.onclick = function() {
+  navBar.classList.remove("active");
+};
+
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
     navBar.classList.remove("active");
-    menuBtn.style.opacity = "1";
-    menuBtn.style.pointerEvents = "auto";
   });
-}
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
