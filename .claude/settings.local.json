@@ -5,7 +5,8 @@
       "Bash(git add:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nComplete portfolio redesign - Biomedical Engineer & AI Developer\n\n- New dark modern design with gradient accents\n- Updated profile: Computer Vision, ML, Edge Computing, Biomedical\n- Added Aria project as main focus\n- New skills: OpenCV, PyTorch, TensorFlow, Core ML, Biosensors\n- Services: CV Solutions, ML Development, Edge AI, Biomedical Apps\n- New HTML CVs (English/Spanish) replacing old PDFs\n- Removed old images, using CSS gradients and icons\n- Fully responsive with smooth animations\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git commit --amend -m \"$(cat <<''EOF''\nComplete portfolio redesign - Biomedical Engineer & AI Developer\n\n- New dark modern design with gradient accents\n- Updated profile: Computer Vision, ML, Edge Computing, Biomedical\n- Added Aria project as main focus\n- New skills: OpenCV, PyTorch, TensorFlow, Core ML, Biosensors\n- Services: CV Solutions, ML Development, Edge AI, Biomedical Apps\n- New HTML CVs (English/Spanish) replacing old PDFs\n- Removed old images, using CSS gradients and icons\n- Fully responsive with smooth animations\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git remote set-url:*)"
     ],
     "deny": [],
     "ask": []
